@@ -1,0 +1,11 @@
+app/hooks
+app/node_modules
+app/platforms
+app/plugins
+app/res
+app/config.xml
+app/package.json
+app/package-lock.json
+app/google-services.json
+.idea
+server/node_modules
