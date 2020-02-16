@@ -2,7 +2,10 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="refresh" content="5">
+  <!--<meta http-equiv="refresh" content="5">-->
+   <meta name="viewport"
+   content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+
   <title></title>
   <link rel="stylesheet" href="styles/w3.css">
   <link rel="stylesheet" href="styles/main.css">
@@ -12,7 +15,7 @@
   <script src = "scripts/jquery-ui.js" type="text/javascript"> </script>
 </head>
 <body>
-  <div class="container">
+  <div class="container" style="height:100vh;">
     <div class="container-header">
       <button id="openNav">&#9776;</button>
       <h1>Market Place Manager</h1>
@@ -75,8 +78,24 @@
           <td><span id="dot(9,3)"  class ="black"></span></td>
         </tr>
       </table>
-      <script type="text/javascript"> loadDoc();</script>
+      <script type="text/javascript">
+      	$(document).ready(function(){
+      		loadDoc();
+			setInterval(function(){
+			 	//alert("Hello"); 
+			 	loadDoc();
+			}, 5000);
+      	});
+      	
+       
+   		</script>
     </div>
+
+    <div class="w3-conatiner w3-center">
+    	<br>
+    	<div>Server IP: <input class="w3-gray" id="serverIP" name="serverIP" value="192.168.43.100"></div>
+    </div>
+
 
   </div>
 </body>

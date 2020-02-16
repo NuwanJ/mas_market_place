@@ -30,7 +30,7 @@ body {
 }
 
 .container-lights{
-  height: 300px;
+  height: auto;
   overflow: auto;
   text-align: center;
   margin-left: auto;

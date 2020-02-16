@@ -1,7 +1,10 @@
 function loadDoc() {
-  console.log("Function");
+  
+  var serverURL = 'http://'+$("#serverIP").val()+':5050/mas_data';
+  console.log("Function " + serverURL);
+
   $.ajax({
-    url: 'http://localhost:5050/mas_data',
+    url: serverURL,
     type:"GET",
     headers: {
     },
